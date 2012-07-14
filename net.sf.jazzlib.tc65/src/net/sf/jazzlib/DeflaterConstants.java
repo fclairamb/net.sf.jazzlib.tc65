@@ -45,7 +45,8 @@ interface DeflaterConstants {
   final static int DYN_TREES    = 2;
   final static int PRESET_DICT  = 0x20;
 
-  final static int DEFAULT_MEM_LEVEL = 7;
+  // It is the only line of code that needed to be changed to run on the TC65i without starving its memory.
+  final static int DEFAULT_MEM_LEVEL = 7; 
 
   final static int MAX_MATCH = 258;
   final static int MIN_MATCH = 3;
